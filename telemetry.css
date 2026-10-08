@@ -1,0 +1,453 @@
+/* ==========================================================================
+   F1 TELEMETRY PORTFOLIO - TELEMETRY & COCKPIT HUD STYLESHEET
+   Driver: Manan Joshi #14 | Cockpit Telemetry Instruments & Canvas Traces
+   ========================================================================== */
+
+/* Cockpit HUD Main Container */
+.cockpit-hud-wrapper {
+  background: radial-gradient(circle at 50% 30%, #151a26 0%, #0b0d13 100%);
+  border: 1px solid rgba(0, 240, 255, 0.25);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.7), inset 0 0 30px rgba(0, 240, 255, 0.05);
+  position: relative;
+  overflow: hidden;
+}
+
+.cockpit-hud-wrapper::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: repeating-linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.15),
+    rgba(0, 0, 0, 0.15) 2px,
+    transparent 2px,
+    transparent 4px
+  );
+  pointer-events: none;
+  z-index: 1;
+}
+
+.hud-top-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 2;
+}
+
+.drs-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-display);
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  padding: 4px 10px;
+  border-radius: 3px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--border-color);
+  color: var(--text-muted);
+  transition: all var(--trans-fast);
+}
+
+.drs-badge.active {
+  background: rgba(0, 230, 118, 0.2);
+  border-color: var(--f1-green);
+  color: var(--f1-green);
+  box-shadow: 0 0 15px var(--f1-green-glow);
+}
+
+.delta-display {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+}
+
+.delta-label {
+  color: var(--text-muted);
+  font-size: 0.75rem;
+}
+
+.delta-val {
+  color: var(--f1-purple);
+  font-weight: 800;
+  text-shadow: 0 0 10px var(--f1-purple-glow);
+}
+
+/* Steering Wheel Shift Lights (RPM LEDs) */
+.rpm-led-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  margin-bottom: 22px;
+  position: relative;
+  z-index: 2;
+}
+
+.led-node {
+  flex: 1;
+  height: 12px;
+  background: #11151f;
+  border-radius: 2px;
+  border: 1px solid #1c2233;
+  transition: all 0.08s ease;
+}
+
+/* Active LED colors */
+.led-node.active.green {
+  background: var(--f1-green);
+  box-shadow: 0 0 12px var(--f1-green);
+  border-color: #a7f3d0;
+}
+
+.led-node.active.red {
+  background: var(--f1-red);
+  box-shadow: 0 0 12px var(--f1-red);
+  border-color: #fca5a5;
+}
+
+.led-node.active.purple {
+  background: var(--f1-purple);
+  box-shadow: 0 0 14px var(--f1-purple);
+  border-color: #e9d5ff;
+}
+
+.led-node.flash {
+  animation: flash-purple 0.15s infinite alternate;
+}
+
+@keyframes flash-purple {
+  from { opacity: 0.3; }
+  to { opacity: 1; box-shadow: 0 0 20px var(--f1-purple); }
+}
+
+/* Main Gauges Cluster */
+.gauges-cluster {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr 1fr;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 24px;
+  position: relative;
+  z-index: 2;
+}
+
+.gear-display-box {
+  background: #000000;
+  border: 2px solid #232c40;
+  border-radius: var(--radius-md);
+  padding: 16px 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.9);
+}
+
+.gear-label {
+  font-family: var(--font-tech);
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  letter-spacing: 1px;
+}
+
+.gear-num {
+  font-family: var(--font-display);
+  font-size: 3.4rem;
+  font-weight: 900;
+  line-height: 1;
+  color: var(--f1-red);
+  text-shadow: 0 0 20px var(--f1-red-glow);
+  margin-top: 4px;
+}
+
+.speedometer-box {
+  background: rgba(0, 0, 0, 0.6);
+  border: 2px solid var(--border-active);
+  border-radius: var(--radius-md);
+  padding: 20px 14px;
+  text-align: center;
+  box-shadow: 0 0 25px rgba(0, 240, 255, 0.15);
+}
+
+.speed-num {
+  font-family: var(--font-display);
+  font-size: 3.6rem;
+  font-weight: 900;
+  line-height: 1;
+  color: #ffffff;
+  letter-spacing: -1px;
+}
+
+.speed-unit {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--f1-cyan);
+  letter-spacing: 1px;
+  margin-top: 4px;
+}
+
+.rpm-display-box {
+  background: #000000;
+  border: 2px solid #232c40;
+  border-radius: var(--radius-md);
+  padding: 16px 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.rpm-label {
+  font-family: var(--font-tech);
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  letter-spacing: 1px;
+}
+
+.rpm-num {
+  font-family: var(--font-display);
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: var(--f1-cyan);
+  margin-top: 10px;
+}
+
+/* Tyre & Brake Temperatures Status */
+.tyres-hud-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin-bottom: 24px;
+  position: relative;
+  z-index: 2;
+}
+
+.tyre-card {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  padding: 8px 6px;
+  text-align: center;
+}
+
+.tyre-pos {
+  font-family: var(--font-tech);
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  font-weight: 700;
+}
+
+.tyre-temp {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--f1-green);
+  margin-top: 2px;
+}
+
+.tyre-wear {
+  font-size: 0.65rem;
+  color: var(--text-muted);
+}
+
+/* Interactive Pedals & Controls (Gas, Brake, Shift) */
+.hud-controls-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding-top: 18px;
+  border-top: 1px solid var(--border-color);
+  position: relative;
+  z-index: 2;
+}
+
+.pedal-btn {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 8px;
+  border-radius: var(--radius-sm);
+  font-family: var(--font-display);
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+  transition: all 0.1s ease;
+  user-select: none;
+}
+
+.pedal-btn.gas {
+  background: rgba(0, 230, 118, 0.12);
+  border: 1px solid var(--f1-green);
+  color: var(--f1-green);
+}
+
+.pedal-btn.gas:hover,
+.pedal-btn.gas:active {
+  background: var(--f1-green);
+  color: #000;
+  box-shadow: 0 0 20px var(--f1-green-glow);
+  transform: scale(0.97);
+}
+
+.pedal-btn.brake {
+  background: rgba(255, 24, 1, 0.12);
+  border: 1px solid var(--f1-red);
+  color: var(--f1-red);
+}
+
+.pedal-btn.brake:hover,
+.pedal-btn.brake:active {
+  background: var(--f1-red);
+  color: #fff;
+  box-shadow: 0 0 20px var(--f1-red-glow);
+  transform: scale(0.97);
+}
+
+.pedal-btn.shift {
+  background: rgba(0, 240, 255, 0.1);
+  border: 1px solid var(--border-active);
+  color: var(--f1-cyan);
+}
+
+.pedal-btn.shift:hover,
+.pedal-btn.shift:active {
+  background: var(--f1-cyan);
+  color: #000;
+  transform: scale(0.97);
+}
+
+.pedal-hint {
+  font-family: var(--font-tech);
+  font-size: 0.65rem;
+  color: var(--text-muted);
+  margin-top: 2px;
+}
+
+/* ==========================================================================
+   CANVAS LIVE TELEMETRY STREAM SECTION
+   ========================================================================== */
+.telemetry-chart-container {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 28px;
+  backdrop-filter: blur(14px);
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.5);
+  margin-top: 36px;
+}
+
+.telemetry-chart-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.chart-title-group {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.chart-badge {
+  background: rgba(0, 240, 255, 0.15);
+  border: 1px solid var(--border-active);
+  color: var(--f1-cyan);
+  padding: 3px 8px;
+  border-radius: 3px;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.chart-title {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: #ffffff;
+}
+
+.telemetry-legend {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-tech);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+
+.legend-color-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+.legend-color-dot.speed { background: var(--f1-cyan); box-shadow: 0 0 6px var(--f1-cyan); }
+.legend-color-dot.throttle { background: var(--f1-green); box-shadow: 0 0 6px var(--f1-green); }
+.legend-color-dot.brake { background: var(--f1-red); box-shadow: 0 0 6px var(--f1-red); }
+.legend-color-dot.rpm { background: var(--f1-purple); box-shadow: 0 0 6px var(--f1-purple); }
+
+.telemetry-canvas-wrap {
+  width: 100%;
+  height: 220px;
+  position: relative;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+#telemetryCanvas {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.chart-footer-metrics {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 18px;
+  margin-top: 16px;
+  border-top: 1px solid var(--border-color);
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+}
+
+.chart-metric-stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stat-k {
+  color: var(--text-muted);
+  font-size: 0.7rem;
+}
+
+.stat-v {
+  color: var(--f1-cyan);
+  font-weight: 700;
+  margin-top: 2px;
+}

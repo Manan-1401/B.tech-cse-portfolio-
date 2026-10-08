@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manan Joshi // Cybercity Portfolio | Software Engineer</title>
+  <meta name="description" content="Cybercity Portfolio of Manan Joshi - JECRC University Student, 35x Hackathon Champion, and Future Software Engineer specializing in C, Python, Java, and Web Technologies.">
+
+  <!-- Google Fonts: Orbitron (Cyber Headings), Rajdhani (Tech HUD), Inter (Body) & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Orbitron:wght@600;800;900&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- =========================================================================
+       01. SITE HEADER & NAVIGATION (CYBERCITY HUD NAV)
+       ========================================================================= -->
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="#hero" class="nav-brand">
+        <img src="assets/images/profile.jpg" alt="Manan Joshi" class="brand-avatar">
+        <div class="brand-text">
+          <span class="brand-name">MANAN JOSHI</span>
+          <span class="brand-sub">// FUTURE SOFTWARE ENGINEER</span>
+        </div>
+      </a>
+
+      <ul class="nav-menu">
+        <li><a href="#hero" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#achievements" class="nav-link">Achievements</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a href="#contact" class="btn-contact-nav">Terminal Comms</a>
+        <button class="mobile-toggle" aria-label="Toggle Navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- =========================================================================
+       02. HERO SECTION / CYBERCITY GRID
+       ========================================================================= -->
+  <section id="hero" class="hero-section">
+    <div class="container">
+      <div class="hero-content">
+        <!-- Hero Left Column -->
+        <div class="hero-left">
+          <div class="badge-status">
+            <span class="status-dot"></span>
+            <span>SYSTEM ONLINE &bull; JECRC UNIVERSITY &bull; NODE: JAIPUR</span>
+          </div>
+
+          <h1 class="hero-title">
+            <span class="gradient-text">MANAN JOSHI</span>
+          </h1>
+
+          <p class="hero-subtitle">
+            FUTURE SOFTWARE ENGINEER &bull; 35x HACKATHON CHAMPION
+          </p>
+
+          <p class="hero-desc">
+            Computer Science student at <strong>JECRC University</strong> passionate about crafting efficient systems, building responsive web applications, and engineering intelligent conversational AI chatbots. Proven ability to architect and deploy production-ready software under tight deadlines.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#projects" class="btn-primary">
+              <span>View Projects</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M5 12h14M12 5l7 7-7 7"></path>
+              </svg>
+            </a>
+            <a href="#contact" class="btn-outline">
+              <span>Contact Information</span>
+            </a>
+          </div>
+
+          <div class="hero-social-links">
+            <a href="https://github.com/Manan-1401" target="_blank" rel="noopener noreferrer" class="social-btn" title="GitHub Profile">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+              </svg>
+              <span>GitHub / Manan-1401</span>
+            </a>
+            <a href="https://www.linkedin.com/in/manan-joshi-312787428?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer" class="social-btn" title="LinkedIn Profile">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+              </svg>
+              <span>LinkedIn</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Hero Right Column: Cyber Profile HUD Card with Real Image -->
+        <div class="hero-right">
+          <div class="profile-card-wrap">
+            <div class="profile-header-image-box">
+              <div class="profile-avatar-frame">
+                <img src="assets/images/profile.jpg" alt="Manan Joshi Developer Avatar" class="profile-main-img">
+                <span class="online-pip"></span>
+              </div>
+              <div class="profile-info">
+                <h3>MANAN JOSHI</h3>
+                <p>JECRC UNIVERSITY &bull; CS CORE</p>
+                <div class="badge-loc">JAIPUR, INDIA &bull; CYBER DEV</div>
+              </div>
+            </div>
+
+            <!-- Key Cyber Stats Grid -->
+            <div class="hero-stats-grid">
+              <div class="stat-item">
+                <span class="stat-number emerald">35</span>
+                <span class="stat-desc">Hackathons Won</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">50+</span>
+                <span class="stat-desc">Competitions</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number cyan">96%</span>
+                <span class="stat-desc">12th Board Score</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number amber">3+</span>
+                <span class="stat-desc">Core Languages</span>
+              </div>
+            </div>
+
+            <div class="code-snippet-box">
+              <span class="comment">// Cybercity Candidate Profile</span><br>
+              <span class="keyword">const</span> developer = {<br>
+              &nbsp;&nbsp;name: <span class="string">"Manan Joshi"</span>,<br>
+              &nbsp;&nbsp;university: <span class="string">"JECRC University"</span>,<br>
+              &nbsp;&nbsp;coreStack: [<span class="string">"C"</span>, <span class="string">"Python"</span>, <span class="string">"Java"</span>],<br>
+              &nbsp;&nbsp;victories: <span class="string">"35 Podiums / 50+"</span><br>
+              };
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       03. ABOUT ME SECTION
+       ========================================================================= -->
+  <section id="about" class="about-section">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-tag">[ ABOUT ME // PROFILE_DATA ]</span>
+        <h2 class="section-title">BACKGROUND &amp; <span>ACADEMIC PROFILE</span></h2>
+        <p class="section-desc">
+          An overview of my education, technical journey, and commitment to software engineering excellence.
+        </p>
+      </div>
+
+      <div class="about-grid">
+        <!-- Biography & Narrative -->
+        <div class="about-card">
+          <h3>MANAN JOSHI</h3>
+          <p class="about-text">
+            I am a dedicated Computer Science student at <strong>JECRC University</strong> with a clear ambition to become a high-impact <strong>Software Engineer</strong>. My technical journey is built on a rigorous understanding of computer science fundamentals, algorithmic problem solving, and rapid product development.
+          </p>
+          <p class="about-text">
+            Having participated in over <strong>50 competitive hackathons and winning 35 of them</strong>, I have developed strong analytical thinking, leadership skills, and the capacity to deliver reliable software solutions in high-pressure collaborative settings.
+          </p>
+
+          <div class="academic-highlights-list">
+            <div class="highlight-row">
+              <div class="highlight-icon">&#10003;</div>
+              <div class="highlight-info">
+                <h4>Computer Science Undergraduate</h4>
+                <p>JECRC University, Jaipur — Specializing in software engineering and systems design.</p>
+              </div>
+            </div>
+
+            <div class="highlight-row">
+              <div class="highlight-icon">&#10003;</div>
+              <div class="highlight-info">
+                <h4>Academic Excellence</h4>
+                <p>Scored 96.0% in Higher Secondary (12th Board examinations) with high honors in Mathematics & Sciences.</p>
+              </div>
+            </div>
+
+            <div class="highlight-row">
+              <div class="highlight-icon">&#10003;</div>
+              <div class="highlight-info">
+                <h4>Competitive Track Record</h4>
+                <p>35 First Place finishes across 50+ inter-college, state, and national hackathons.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Technical Competency Metrics -->
+        <div class="competency-card">
+          <div>
+            <h3 style="font-family: var(--font-cyber); font-size: 1.25rem; font-weight: 800; margin-bottom: 24px; color: #fff;">
+              TECHNICAL COMPETENCIES
+            </h3>
+
+            <div class="competency-item">
+              <div class="comp-header">
+                <span>Data Structures &amp; Problem Solving (C / Python)</span>
+                <span class="comp-score">95%</span>
+              </div>
+              <div class="progress-track">
+                <div class="progress-bar" style="width: 95%;"></div>
+              </div>
+            </div>
+
+            <div class="competency-item">
+              <div class="comp-header">
+                <span>Object-Oriented Design (Java)</span>
+                <span class="comp-score">90%</span>
+              </div>
+              <div class="progress-track">
+                <div class="progress-bar" style="width: 90%;"></div>
+              </div>
+            </div>
+
+            <div class="competency-item">
+              <div class="comp-header">
+                <span>Modern Web Architecture (HTML5, CSS3, JavaScript)</span>
+                <span class="comp-score">92%</span>
+              </div>
+              <div class="progress-track">
+                <div class="progress-bar" style="width: 92%;"></div>
+              </div>
+            </div>
+
+            <div class="competency-item">
+              <div class="comp-header">
+                <span>AI &amp; Conversational Chatbot Systems</span>
+                <span class="comp-score">88%</span>
+              </div>
+              <div class="progress-track">
+                <div class="progress-bar" style="width: 88%;"></div>
+              </div>
+            </div>
+          </div>
+
+          <div style="padding-top: 18px; border-top: 1px solid var(--bg-card-border); color: var(--text-muted); font-size: 0.85rem; font-family: var(--font-mono);">
+            Continuously learning, building projects, and staying abreast with modern industry standards.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       04. EDUCATION SECTION
+       ========================================================================= -->
+  <section id="education" class="education-section">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-tag">[ EDUCATION // QUALIFICATIONS ]</span>
+        <h2 class="section-title">ACADEMIC <span>QUALIFICATIONS</span></h2>
+        <p class="section-desc">
+          Formal educational trajectory and foundational coursework.
+        </p>
+      </div>
+
+      <div class="education-timeline">
+        <!-- University Degree -->
+        <div class="edu-card">
+          <div class="edu-card-top">
+            <div>
+              <h3 class="edu-degree">Bachelor of Technology (B.Tech) — Computer Science &amp; Engineering</h3>
+              <div class="edu-institution">JECRC University, Jaipur</div>
+            </div>
+            <span class="edu-badge-score">Pursuing Degree</span>
+          </div>
+          <p class="edu-desc">
+            Enrolled in comprehensive coursework spanning Data Structures, Algorithms, Object-Oriented Programming, Database Systems, Computer Networks, and Operating Systems. Actively leading technical initiatives and competing in hackathons.
+          </p>
+          <div class="edu-course-tags">
+            <span class="course-tag">Algorithms</span>
+            <span class="course-tag">Data Structures</span>
+            <span class="course-tag">Object-Oriented Design</span>
+            <span class="course-tag">Software Engineering</span>
+            <span class="course-tag">Computer Networks</span>
+          </div>
+        </div>
+
+        <!-- 12th Board 96% -->
+        <div class="edu-card">
+          <div class="edu-card-top">
+            <div>
+              <h3 class="edu-degree">Senior Secondary Certificate (Class XII)</h3>
+              <div class="edu-institution">Higher Secondary Education &bull; Science Stream</div>
+            </div>
+            <span class="edu-badge-score grade-a">96.0% Overall Score</span>
+          </div>
+          <p class="edu-desc">
+            Successfully completed Higher Secondary examination with an outstanding score of <strong>96%</strong> in the Science &amp; Mathematics stream, providing a strong mathematical and logical foundation for computer science engineering.
+          </p>
+          <div class="edu-course-tags">
+            <span class="course-tag">Mathematics</span>
+            <span class="course-tag">Physics</span>
+            <span class="course-tag">Chemistry</span>
+            <span class="course-tag">Academic Merit</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       05. SKILLS SECTION WITH OFFICIAL SVG LOGOS
+       ========================================================================= -->
+  <section id="skills" class="skills-section">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-tag">[ SKILLS // TECH_STACK ]</span>
+        <h2 class="section-title">TECHNICAL <span>EXPERTISE</span></h2>
+        <p class="section-desc">
+          Proficiencies in foundational programming languages, web engineering, and software tools.
+        </p>
+      </div>
+
+      <div class="skills-grid">
+        <!-- C Language -->
+        <div class="skill-category-card">
+          <div class="category-icon-box">
+            <img src="assets/images/c-logo.svg" alt="C Programming Language Logo">
+          </div>
+          <h3 class="category-title">C PROGRAMMING</h3>
+          <p class="category-desc">
+            Low-level memory management, pointers, dynamic allocations, and fundamental algorithmic structures.
+          </p>
+          <div class="skill-items-list">
+            <div class="skill-row">
+              <span class="skill-name">Pointers &amp; Memory Allocation</span>
+              <span class="skill-level-badge">Proficient</span>
+            </div>
+            <div class="skill-row">
+              <span class="skill-name">Data Structures (Linked Lists, Trees)</span>
+              <span class="skill-level-badge">Proficient</span>
+            </div>
+            <div class="skill-row">
+              <span class="skill-name">Algorithmic Complexity &amp; Optimization</span>
+              <span class="skill-level-badge">Advanced</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Python -->
+        <div class="skill-category-card">
+          <div class="category-icon-box">
+            <img src="assets/images/python-logo.svg" alt="Python Language Logo">
+          </div>
+          <h3 class="category-title">PYTHON</h3>
+          <p class="category-desc">
+            Rapid prototyping, scripting, automation, conversational chatbot logic, and data handling.
+          </p>
+          <div class="skill-items-list">
+            <div class="skill-row">
+              <span class="skill-name">Conversational Chatbot Systems</span>
+              <span class="skill-level-badge">Proficient</span>
+            </div>
+            <div class="skill-row">
+              <span class="skill-name">Automation &amp; Scripting</span>
+              <span class="skill-level-badge">Proficient</span>
+            </div>
+            <div class="skill-row">
+              <span class="skill-name">Object-Oriented &amp; Functional Scripting</span>
+              <span class="skill-level-badge">Advanced</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Java -->
+        <div class="skill-category-card">
+          <div class="category-icon-box">
+            <img src="assets/images/java-logo.svg" alt="Java Language Logo">
+          </div>
+          <h3 class="category-title">JAVA</h3>
+          <p class="category-desc">
+            Robust object-oriented programming, design patterns, multithreading, and scalable backend architecture.
+          </p>
+          <div class="skill-items-list">
+            <div class="skill-row">
+              <span class="skill-name">Core Java &amp; OOP Principles</span>
+              <span class="skill-level-badge">Proficient</span>
+            </div>
+            <div class="skill-row">
+              <span class="skill-name">Collections Framework</span>
+              <span class="skill-level-badge">Proficient</span>
+            </div>
+            <div class="skill-row">
+              <span class="skill-name">Exception Handling &amp; Multithreading</span>
+              <span class="skill-level-badge">Proficient</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Web Development -->
+        <div class="skill-category-card">
+          <div class="category-icon-box">
+            <img src="assets/images/web-logo.svg" alt="Web Technologies Logo">
+          </div>
+          <h3 class="category-title">WEB SYSTEMS</h3>
+          <p class="category-desc">
+            Building responsive, accessible, and high-performance user interfaces using modern web standards.
+          </p>
+          <div class="skill-items-list">
+            <div class="skill-row">
+              <span class="skill-name">Semantic HTML5 &amp; Responsive CSS3</span>
+              <span class="skill-level-badge">Advanced</span>
+            </div>
+            <div class="skill-row">
+              <span class="skill-name">JavaScript (ES6+) &amp; DOM Manipulation</span>
+              <span class="skill-level-badge">Proficient</span>
+            </div>
+            <div class="skill-row">
+              <span class="skill-name">Interactive Web Applications</span>
+              <span class="skill-level-badge">Proficient</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Software Engineering -->
+        <div class="skill-category-card">
+          <div class="category-icon-box" style="font-family: var(--font-cyber); font-weight: 900; font-size: 1.3rem; color: var(--neon-cyan);">
+            &lt;&gt;
+          </div>
+          <h3 class="category-title">CORE ENGINEERING</h3>
+          <p class="category-desc">
+            Clean code practices, version control with Git, architectural planning, and rapid debugging.
+          </p>
+          <div class="skill-items-list">
+            <div class="skill-row">
+              <span class="skill-name">Git &amp; GitHub Version Control</span>
+              <span class="skill-level-badge">Proficient</span>
+            </div>
+            <div class="skill-row">
+              <span class="skill-name">Rapid Prototype Delivery</span>
+              <span class="skill-level-badge">Master</span>
+            </div>
+            <div class="skill-row">
+              <span class="skill-name">Cross-Functional Team Collaboration</span>
+              <span class="skill-level-badge">Advanced</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Development Workflow -->
+        <div class="skill-category-card">
+          <div class="category-icon-box" style="font-size: 1.5rem; color: var(--neon-pink);">
+            &#9881;
+          </div>
+          <h3 class="category-title">SPRINT WORKFLOW</h3>
+          <p class="category-desc">
+            Structured development workflows ensuring performance, code maintainability, and clean documentation.
+          </p>
+          <div class="skill-items-list">
+            <div class="skill-row">
+              <span class="skill-name">Responsive Design Principles</span>
+              <span class="skill-level-badge">Proficient</span>
+            </div>
+            <div class="skill-row">
+              <span class="skill-name">Problem Decomposition</span>
+              <span class="skill-level-badge">Advanced</span>
+            </div>
+            <div class="skill-row">
+              <span class="skill-name">Sprint &amp; Hackathon Execution</span>
+              <span class="skill-level-badge">Master</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       06. PROJECTS SECTION WITH RICH PROJECT MOCKUPS
+       ========================================================================= -->
+  <section id="projects" class="projects-section">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-tag">[ PROJECTS // REPOSITORIES ]</span>
+        <h2 class="section-title">ENGINEERED <span>PROJECTS</span></h2>
+        <p class="section-desc">
+          Key software solutions developed with a focus on usability, clean code, and interactive problem solving.
+        </p>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Project 1: Responsive Web Application with Mockup Image -->
+        <div class="project-card">
+          <div>
+            <div class="project-banner-wrapper">
+              <img src="assets/images/project-web.jpg" alt="Responsive Web Platform Interface Mockup" class="project-banner-img">
+              <div class="project-banner-overlay">
+                <span class="project-tag">WEB ARCHITECTURE</span>
+                <span class="project-status-pill">DEPLOYED ONLINE</span>
+              </div>
+            </div>
+
+            <div class="project-body">
+              <h3 class="project-title">RESPONSIVE WEB PLATFORM</h3>
+              <p class="project-desc">
+                A modern, high-performance personal portfolio and web platform engineered adhering to responsive design standards. Includes structured component hierarchies, interactive DOM state handling, dynamic styling, and cross-browser compatibility.
+              </p>
+
+              <div class="project-tech-tags">
+                <span class="tech-pill">HTML5</span>
+                <span class="tech-pill">CSS3 Architecture</span>
+                <span class="tech-pill">JavaScript ES6+</span>
+                <span class="tech-pill">Responsive Design</span>
+                <span class="tech-pill">GitHub Pages</span>
+              </div>
+
+              <div class="project-actions">
+                <a href="https://github.com/Manan-1401" target="_blank" rel="noopener noreferrer" class="btn-project-link">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                  </svg>
+                  <span>View Source on GitHub</span>
+                </a>
+                <a href="#hero" class="btn-project-link">
+                  <span>Back to Top</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: AI Conversational Chatbot with Interface Banner -->
+        <div class="project-card">
+          <div>
+            <div class="project-banner-wrapper">
+              <img src="assets/images/project-chatbot.jpg" alt="AI Chatbot Holographic Interface" class="project-banner-img">
+              <div class="project-banner-overlay">
+                <span class="project-tag" style="border-color: var(--neon-pink); color: var(--neon-pink);">ARTIFICIAL INTELLIGENCE</span>
+                <span class="project-status-pill" style="border-color: var(--neon-cyan); color: var(--neon-cyan);">TERMINAL ONLINE</span>
+              </div>
+            </div>
+
+            <div class="project-body">
+              <h3 class="project-title">INTELLIGENT AI CHATBOT</h3>
+              <p class="project-desc">
+                An intelligent conversational assistant engineered to parse user intents, resolve domain inquiries, and answer technical questions regarding qualifications and projects with low latency.
+              </p>
+
+              <div class="project-tech-tags">
+                <span class="tech-pill">Python</span>
+                <span class="tech-pill">NLP Intent Parser</span>
+                <span class="tech-pill">Automated Routing</span>
+                <span class="tech-pill">Context Handling</span>
+              </div>
+
+              <!-- Embedded Cyber Terminal Chatbot Widget -->
+              <div class="chatbot-widget-container">
+                <div class="chat-messages-box" id="chatStream">
+                  <div class="chat-bubble bot">
+                    Cyber Terminal v2.6 // Hello! Ask me about Manan's "skills", "education", "hackathons", or "contact".
+                  </div>
+                </div>
+
+                <form class="chat-input-row" id="miniChatForm">
+                  <input type="text" id="miniChatInput" placeholder="Command input: e.g. 'tell me about skills'..." autocomplete="off">
+                  <button type="submit">TRANSMIT</button>
+                </form>
+              </div>
+
+              <div class="project-actions" style="margin-top: 18px;">
+                <a href="https://github.com/Manan-1401" target="_blank" rel="noopener noreferrer" class="btn-project-link">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                  </svg>
+                  <span>GitHub Repository</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       07. ACHIEVEMENTS & CERTIFICATIONS WITH REAL CERTIFICATE IMAGES
+       ========================================================================= -->
+  <section id="achievements" class="achievements-section">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-tag">[ ACHIEVEMENTS // HONORS_CABINET ]</span>
+        <h2 class="section-title">HONORS &amp; <span>CERTIFICATIONS</span></h2>
+        <p class="section-desc">
+          Official recognitions, trophies, and certifications earned across competitive hackathons and academic programs.
+        </p>
+      </div>
+
+      <!-- Cyber Stats Banner -->
+      <div class="achievements-hero-card">
+        <div class="achievements-hero-grid">
+          <div>
+            <h3 class="achieve-banner-title">
+              35x HACKATHON CHAMPION
+            </h3>
+            <p class="achieve-banner-text">
+              Demonstrated competitive excellence by competing in <strong>50+ hackathons</strong> and securing <strong>35 First Place victories</strong>. Recognized for rapid prototype ideation, teamwork, and strong engineering implementation.
+            </p>
+          </div>
+
+          <div class="achieve-stats-row">
+            <div class="stat-box-solid">
+              <div class="num">35</div>
+              <div class="lbl">First Place Wins</div>
+            </div>
+            <div class="stat-box-solid">
+              <div class="num" style="color: var(--neon-pink);">50+</div>
+              <div class="lbl">Total Hackathons</div>
+            </div>
+            <div class="stat-box-solid">
+              <div class="num" style="color: var(--neon-green);">70%</div>
+              <div class="lbl">Success Rate</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Real Certificate & Award Showcase Cards -->
+      <div class="cert-gallery-grid">
+        <!-- Certificate 1: Hackathon Grand Champion -->
+        <div class="cert-card">
+          <div class="cert-img-container">
+            <img src="assets/images/cert-hackathon.jpg" alt="Hackathon Grand Champion 35x Winner Certificate of Excellence">
+          </div>
+          <div class="cert-info">
+            <span class="cert-badge-tag">&#127942; GRAND CHAMPION BADGE</span>
+            <h4 class="cert-title">35x Hackathon Victories Certificate</h4>
+            <p class="cert-desc">
+              Awarded for dominating 35 competitive hackathons out of 50+ starts. Exemplifies rapid prototyping, full-stack product development, and presentation skills under strict 24-48 hour hackathon clocks.
+            </p>
+          </div>
+        </div>
+
+        <!-- Certificate 2: Academic Excellence Diploma -->
+        <div class="cert-card">
+          <div class="cert-img-container">
+            <img src="assets/images/cert-academic.jpg" alt="Certificate of Academic Merit 96 Percent Mark of Distinction">
+          </div>
+          <div class="cert-info">
+            <span class="cert-badge-tag" style="color: var(--neon-green);">&#127891; ACADEMIC MERIT SEAL</span>
+            <h4 class="cert-title">96% Board Mark of Distinction</h4>
+            <p class="cert-desc">
+              Official distinction diploma for scoring 96.0% in Senior Secondary Board Examination (Class XII). Confirms rigorous mathematical foundations and academic excellence prior to entering JECRC University.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       08. CONTACT SECTION
+       ========================================================================= -->
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-tag">[ CONTACT // COMM_TERMINAL ]</span>
+        <h2 class="section-title">COMMUNICATION <span>UPLINK</span></h2>
+        <p class="section-desc">
+          Feel free to reach out for internship opportunities, technical collaborations, or academic inquiries.
+        </p>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Direct Contact Information -->
+        <div class="contact-info-card">
+          <div>
+            <h3 style="font-family: var(--font-cyber); font-size: 1.3rem; font-weight: 800; color: #fff;">DIRECT CHANNELS</h3>
+            <p style="color: var(--text-secondary); font-size: 0.95rem; margin-top: 6px;">
+              Open to conversations regarding software engineering roles and project collaborations.
+            </p>
+
+            <div class="contact-channels">
+              <!-- Phone -->
+              <a href="tel:67676767676" class="channel-link">
+                <div class="channel-icon-box">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                  </svg>
+                </div>
+                <div>
+                  <div class="channel-title">Phone Number</div>
+                  <div class="channel-val">67676767676</div>
+                </div>
+              </a>
+
+              <!-- GitHub -->
+              <a href="https://github.com/Manan-1401" target="_blank" rel="noopener noreferrer" class="channel-link">
+                <div class="channel-icon-box" style="color: var(--neon-pink); background: rgba(255, 0, 127, 0.12); border-color: rgba(255, 0, 127, 0.3);">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                  </svg>
+                </div>
+                <div>
+                  <div class="channel-title">GitHub</div>
+                  <div class="channel-val">github.com/Manan-1401</div>
+                </div>
+              </a>
+
+              <!-- LinkedIn -->
+              <a href="https://www.linkedin.com/in/manan-joshi-312787428?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer" class="channel-link">
+                <div class="channel-icon-box" style="color: var(--neon-purple); background: rgba(157, 78, 221, 0.12); border-color: rgba(157, 78, 221, 0.3);">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                  </svg>
+                </div>
+                <div>
+                  <div class="channel-title">LinkedIn</div>
+                  <div class="channel-val">linkedin.com/in/manan-joshi</div>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div style="font-size: 0.85rem; color: var(--text-muted); font-family: var(--font-mono);">
+            NODE LOCATION: JAIPUR, INDIA &bull; JECRC UNIVERSITY
+          </div>
+        </div>
+
+        <!-- Contact Message Form -->
+        <div class="contact-form-card">
+          <form id="contactForm">
+            <div class="form-group">
+              <label for="contactName">YOUR NAME / CALLSIGN</label>
+              <input type="text" id="contactName" required placeholder="e.g. Professor / Evaluator / Recruiter">
+            </div>
+
+            <div class="form-group">
+              <label for="contactEmail">EMAIL ADDRESS</label>
+              <input type="email" id="contactEmail" required placeholder="name@organization.com">
+            </div>
+
+            <div class="form-group">
+              <label for="contactSubject">SUBJECT / PURPOSE</label>
+              <input type="text" id="contactSubject" required placeholder="e.g. Project Evaluation / Collaboration">
+            </div>
+
+            <div class="form-group">
+              <label for="contactMessage">MESSAGE CONTENT</label>
+              <textarea id="contactMessage" rows="4" required placeholder="Transmit message to Manan Joshi..."></textarea>
+            </div>
+
+            <button type="submit" class="btn-submit">DISPATCH MESSAGE</button>
+            <div id="formAlert" class="form-alert"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       09. SITE FOOTER
+       ========================================================================= -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        &copy; 2026 MANAN JOSHI &bull; JECRC UNIVERSITY STUDENT &bull; FUTURE SOFTWARE ENGINEER
+      </div>
+      <div style="font-family: var(--font-mono); color: var(--neon-cyan);">
+        CYBERCITY TECH THEME // ZERO BUILD DEPENDENCIES
+      </div>
+    </div>
+  </footer>
+
+  <!-- Main Scripts -->
+  <script src="js/main.js"></script>
+</body>
+</html>
